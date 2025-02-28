@@ -8,7 +8,6 @@ class Solution {
         }
         
         answer = (double) sum / numbers.length;
-        
         return answer;
     }
 }
