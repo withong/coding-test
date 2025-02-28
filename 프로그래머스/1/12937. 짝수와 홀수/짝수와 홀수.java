@@ -7,7 +7,6 @@ class Solution {
         } else {
             answer = "Odd";
         }
-        
         return answer;
     }
 }
