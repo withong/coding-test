@@ -1,4 +1,5 @@
 class Solution {
+
     public double solution(int[] arr) {
         int arrSum = 0;
         
