@@ -1,4 +1,5 @@
 class Solution {
+
     public int[] solution(long num) {
         String str = String.valueOf(num);
         int[] answer = new int[str.length()];
