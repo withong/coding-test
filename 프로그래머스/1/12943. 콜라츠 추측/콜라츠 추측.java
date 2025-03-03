@@ -1,4 +1,5 @@
 class Solution {
+
     public int solution(int num) {
         int count = 0;
         long numL = num;
