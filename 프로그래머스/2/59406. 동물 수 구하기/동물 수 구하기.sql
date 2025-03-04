@@ -1,3 +1,3 @@
-select  count(ANIMAL_ID) as "count"
+select count(ANIMAL_ID) as "count"
 from ANIMAL_INS
 ;
