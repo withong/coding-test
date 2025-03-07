@@ -1,4 +1,5 @@
 class Solution {
+
     public String solution(String phone_number) {
         int length = phone_number.length();
         int setLength = length - 4;
