@@ -1,3 +1,3 @@
-select DATETIME  "시간"
+select DATETIME "시간"
 from ANIMAL_INS 
 order by DATETIME limit 1
