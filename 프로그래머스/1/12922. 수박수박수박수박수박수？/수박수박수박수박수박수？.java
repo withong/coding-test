@@ -1,4 +1,5 @@
 class Solution {
+
     public String solution(int n) {
         StringBuilder sb = new StringBuilder();
 
