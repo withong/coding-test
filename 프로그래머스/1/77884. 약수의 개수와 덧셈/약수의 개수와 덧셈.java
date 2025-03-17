@@ -1,4 +1,5 @@
 class Solution {
+
     public int solution(int left, int right) {
         int answer = 0;
 
@@ -12,5 +13,6 @@ class Solution {
             }
         }
 
-        return answer;    }
+        return answer;
+    }
 }
