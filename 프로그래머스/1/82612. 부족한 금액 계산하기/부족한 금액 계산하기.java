@@ -1,4 +1,5 @@
 class Solution {
+
     public long solution(int price, int money, int count) {
         long amount = (long) price * count * (count + 1) / 2;
 
