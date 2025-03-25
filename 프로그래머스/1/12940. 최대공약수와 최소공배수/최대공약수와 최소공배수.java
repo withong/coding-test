@@ -1,6 +1,7 @@
 import java.math.BigInteger;
 
 class Solution {
+
     public int[] solution(int n, int m) {
         BigInteger a = BigInteger.valueOf(n);
         BigInteger b = BigInteger.valueOf(m);
