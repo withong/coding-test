@@ -1,4 +1,5 @@
 class Solution {
+
     public int solution(int n) {
         String str = "";
 
