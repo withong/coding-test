@@ -6,4 +6,4 @@ select  PT_NAME,
 from PATIENT 
 where AGE <= 12 
 and GEND_CD = 'W'
-order by AGE desc, PT_NAME asc;
+order by AGE desc, PT_NAME asc
