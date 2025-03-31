@@ -1,4 +1,5 @@
 class Solution {
+
     public int solution(int[] number) {
         int count = 0;
         
