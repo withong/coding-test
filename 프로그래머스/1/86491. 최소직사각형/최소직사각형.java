@@ -1,4 +1,5 @@
 class Solution {
+
     public int solution(int[][] sizes) {
         int maxW = 0;
         int maxH = 0;
