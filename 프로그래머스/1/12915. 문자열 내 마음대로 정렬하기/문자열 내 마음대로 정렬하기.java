@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 class Solution {
+
     public String[] solution(String[] strings, int n) {
         String[] answer = new String[strings.length];
 
