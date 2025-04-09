@@ -3,6 +3,7 @@ import java.util.Collections;
 import java.util.List;
 
 class Solution {
+
     public int[] solution(int[] numbers) {
         List<Integer> list = new ArrayList<>();
 
