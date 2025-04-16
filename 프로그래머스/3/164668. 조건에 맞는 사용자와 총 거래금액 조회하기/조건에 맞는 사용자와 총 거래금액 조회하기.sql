@@ -4,4 +4,4 @@ join USED_GOODS_USER u on b.WRITER_ID = u.USER_ID
 where b.STATUS = 'DONE'
 group by u.USER_ID, u.NICKNAME
 having TOTAL_SALES >= 700000
-order by TOTAL_SALES;
+order by TOTAL_SALES
