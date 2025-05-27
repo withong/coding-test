@@ -1,13 +1,8 @@
-package algorism.string;
+package java.section02;
 
 import java.util.Scanner;
 
 public class Exam03 {
-/*
-    한 개의 문장이 주어지면 그 문장 속에서 가장 긴 단어를 출력하는 프로그램을 작성하세요.
-    문장속의 각 단어는 공백으로 구분됩니다.
-    가장 길이가 긴 단어가 여러개일 경우 문장속에서 가장 앞쪽에 위치한 단어를 답으로 합니다.
-*/
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String input = in.nextLine();
