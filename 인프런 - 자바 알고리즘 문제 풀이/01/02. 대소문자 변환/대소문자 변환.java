@@ -15,7 +15,6 @@ public class Main {
             }
             answer.append(c);
         }
-
         System.out.println(answer);
     }
 }
