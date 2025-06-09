@@ -10,10 +10,14 @@ public class Main {
     }
 
     public static String solution(String input) {
-        StringBuilder sb = new StringBuilder(input);
+        input = input.toLowerCase();
+        int len = input.length();
 
-        String reverse = sb.reverse().toString();
-
-        return input.equalsIgnoreCase(reverse) ? "YES" : "NO";
+        for (int i = 0; i < len / 2; i++) {
+            if (input.charAt(i) != input.charAt(len - 1 - i)) {
+                return "NO";
+            }
+        }
+        return "YES";
     }
 }
