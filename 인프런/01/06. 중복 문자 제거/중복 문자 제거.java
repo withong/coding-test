@@ -1,23 +1,24 @@
 import java.util.Scanner;
 
 public class Main {
+
+    public String solution(String input) {
+        String answer = "";
+
+        for (int i = 0; i < input.length(); i++) {
+            if (i == input.indexOf(input.charAt(i))) {
+                answer += input.charAt(i);
+            }
+        }
+
+        return answer;
+    }
+
     public static void main(String[] args) {
+        Main m = new Main();
         Scanner in = new Scanner(System.in);
         String input = in.nextLine();
 
-        String answer = solution(input);
-        System.out.println(answer);
-    }
-
-    public static String solution(String input) {
-        StringBuilder sb = new StringBuilder();
-
-        for (char c : input.toCharArray()) {
-            String str = sb.toString();
-            if (!str.contains(String.valueOf(c))) {
-                sb.append(c);
-            }
-        }
-        return sb.toString();
+        System.out.println(m.solution(input));
     }
 }
