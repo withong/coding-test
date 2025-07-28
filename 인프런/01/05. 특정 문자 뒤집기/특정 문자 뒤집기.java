@@ -1,24 +1,16 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String input = in.nextLine();
 
-        String answer = solution(input);
-        System.out.println(answer);
-    }
-
-    public static String solution(String str) {
-
-        char[] chars = str.toCharArray();
+    public String solution(String input) {
         int lt = 0;
-        int rt = str.length() - 1;
+        int rt = input.length() - 1;
+        char[] chars = input.toCharArray();
 
         while (lt < rt) {
-            if (!Character.isLetter(chars[lt])) {
+            if (!Character.isAlphabetic(chars[lt])) {
                 lt++;
-            } else if (!Character.isLetter(chars[rt])) {
+            } else if (!Character.isAlphabetic(chars[rt])) {
                 rt--;
             } else {
                 char tmp = chars[lt];
@@ -28,7 +20,15 @@ public class Main {
                 rt--;
             }
         }
+
         return String.valueOf(chars);
     }
 
+    public static void main(String[] args) {
+        Main m = new Main();
+        Scanner in = new Scanner(System.in);
+        String input = in.nextLine();
+
+        System.out.println(m.solution(input));
+    }
 }
