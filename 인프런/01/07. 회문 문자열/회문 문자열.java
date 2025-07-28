@@ -1,23 +1,25 @@
 import java.util.Scanner;
 
 public class Main {
+
+    public String solution(String input) {
+        int lt = 0;
+        int rt = input.length() - 1;
+
+        while (lt < rt) {
+            char[] chars = input.toLowerCase().toCharArray();
+            if (chars[lt] != chars[rt]) return "NO";
+            lt++;
+            rt--;
+        }
+        return "YES";
+    }
+
     public static void main(String[] args) {
+        Main m = new Main();
         Scanner in = new Scanner(System.in);
         String input = in.nextLine();
 
-        String answer = solution(input);
-        System.out.println(answer);
-    }
-
-    public static String solution(String input) {
-        input = input.toLowerCase();
-        int len = input.length();
-
-        for (int i = 0; i < len / 2; i++) {
-            if (input.charAt(i) != input.charAt(len - 1 - i)) {
-                return "NO";
-            }
-        }
-        return "YES";
+        System.out.println(m.solution(input));
     }
 }
