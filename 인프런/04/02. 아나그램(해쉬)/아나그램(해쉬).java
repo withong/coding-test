@@ -3,21 +3,17 @@ import java.util.Scanner;
 
 public class Main {
 
-    public char solution(int n, String s) {
-        char answer = ' ';
+    public String solution(String a, String b) {
+        String answer = "YES";
         HashMap<Character, Integer> map = new HashMap<>();
 
-        for (char c : s.toCharArray()) {
+        for (char c : a.toCharArray()) {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
 
-        int max = Integer.MIN_VALUE;
-
-        for (char key : map.keySet()) {
-            if (map.get(key) > max) {
-                max = map.get(key);
-                answer = key;
-            }
+        for (char c : b.toCharArray()) {
+            if (!map.containsKey(c) || map.get(c) == 0) return "NO";
+            map.put(c, map.get(c) - 1);
         }
 
         return answer;
@@ -27,9 +23,9 @@ public class Main {
         Main main = new Main();
         Scanner in = new Scanner(System.in);
 
-        int n = in.nextInt();
-        String s = in.next();
+        String a = in.next();
+        String b = in.next();
 
-        System.out.println(main.solution(n, s));
+        System.out.println(main.solution(a, b));
     }
 }
