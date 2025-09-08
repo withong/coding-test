@@ -16,7 +16,7 @@ public class Main {
         }
 
         if (!stack.isEmpty()) return "NO";
-        return answer;햣
+        return answer;
     }
 
     public static void main(String[] args) {
